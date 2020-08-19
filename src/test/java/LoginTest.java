@@ -22,12 +22,10 @@ public class LoginTest {
 	public void doLogin() {
 		
 		driver.get("http://gmail.com");
-		//driver.findElement(By.id("SignIn")).click();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		/*driver.findElement(By.id("identifierId")).sendKeys("bkoumbia5@gmail.com");
-		driver.findElement(By.xpath("//div[@class='VfPpkd-RLmnJb']"));
-		driver.findElement(By.id("Passwd")).sendKeys("Safatou@5");*/
 		System.out.println(driver.getTitle());
+		
+		// Added new comments
 	}
 	
 	@AfterTest
